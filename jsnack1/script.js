@@ -4,12 +4,11 @@
 const num1 = Number(prompt("Inserisci il primo numero ⬇"))
 const num2 = Number(prompt("Inserisci il secondo numero ⬇"))
 
-if (num1 || num2 !== Number) {
-    alert ("💀 Non hai inserito un numero, aggiorna la pagina e riprova! ☠")
-} else if (num1 > num2) {
-    alert (`🔝 Il primo numero inserito è maggiore del secondo 🚀`)
+if (num1 > num2) {
+    alert (`🔝 ${num1}: Il primo numero inserito è maggiore del secondo 🚀`)
 } else if (num2 > num1) {
-    alert ("🔝 Il secondo numero è maggiore del primo 🚀")
+    alert (`🔝 ${num2}: Il secondo numero è maggiore del primo 🚀`)
 } else {
-    alert ("♊ I numeri sono uguali ♊")
+    alert (`♊ ${num1} - ${num2}: I numeri sono uguali ♊`)
 }
+
