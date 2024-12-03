@@ -4,13 +4,19 @@
 const guestList = ['Alessandra', 'Luca', 'Martina', 'Matteo', 'Giorgia', 'Andrea', 'Federica', 'Giovanni', 'Sara', 'Stefano']
 console.log (guestList)
 
-let yourName = prompt(String("Inserisci il tuo nome: ⬇"))
+const yourName = prompt(String("Inserisci il tuo nome: ⬇"))
+
+let isNameInList = false
 
 for (i = 0; i < guestList.length; i++) {
-    if (yourName === guestList[i]) {
-        alert("✔ Sei stato invitato! Puoi partecipare alla festa! 🎉")
-    } else {
-        alert("❌ Non sei stato invitato! Non puoi partecipare alla festa, mi dispiace! 🙅🏻‍♂️")
-    }
+    if (guestList[i] === yourName) {
+        isNameInList = true
+    } 
+}
+
+if (isNameInList) {
+    alert("✔ Sei stato invitato! Puoi partecipare alla festa! 🎉")
+} else {
+    alert("❌ Non sei stato invitato! Non puoi partecipare alla festa, mi dispiace! 🙅🏻‍♂️")
 }
 
